@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ReceiptHub_backend": {
+      "main": "src/ReceiptHub_backend/main.mo",
+      "type": "motoko"
+    },
+    "ReceiptHub_frontend": {
+      "dependencies": [
+        "ReceiptHub_backend"
+      ],
+      "source": [
+        "src/ReceiptHub_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ReceiptHub_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
